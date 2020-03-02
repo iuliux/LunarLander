@@ -7,7 +7,8 @@ It's based on https://github.com/pyrex8/lunarlander. Deciphered the code, comple
 
 ## Controls
 
-`Left`, `Right` arrows to fire thrusters, `Space` for vertical thruster. `R` to reset, `Esc` to exit.
+`Left`, `Right` arrows to fire thrusters, `Space` for vertical thruster.
+`R` to reset, `Esc` to exit.
 
 ## Install and run
 
