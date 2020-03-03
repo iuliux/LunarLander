@@ -27,8 +27,7 @@ class Lander:
         return x, y
 
     def did_land(self):
-        platfom_start_x, platform_end_x, platform_y = self.game.terrain.get_platform_coords()
-        return (self.y + 8) >= platform_y and self.x > platfom_start_x and self.x < platform_end_x and self.v_speed < 30
+        return self.game.terrain.is_landing(self.x, self.y, self.v_speed)
 
     def did_collide(self):
         return self.game.terrain.is_collision(self.x, self.y)

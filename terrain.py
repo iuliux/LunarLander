@@ -55,3 +55,7 @@ class Terrain:
             if self.mx[i] <= x <= self.mx[i + 1] and min(self.my[i], self.my[i + 1]) <= y:
                 return True
         return False
+
+    def is_landing(self, x, y, v_speed):
+        platfom_start_x, platform_end_x, platform_y = self.get_platform_coords()
+        return (y + 8) >= platform_y and x > platfom_start_x and x < platform_end_x and v_speed < 30
